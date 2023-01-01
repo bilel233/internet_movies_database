@@ -4,23 +4,58 @@ img {
     border: 2px solid blue;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-image: url(database/images/pinao.jpeg);
+    background-image: url(https://www.istockphoto.com/fr/photo/guitare-classique-sur-fond-de-bois-sombre-gm1322201765-408238515);
+    background-color: aliceblue;
+    
+    
   }
+ 
+  
   
   body {
-    background-color: #ffa07a;
+    background-color: rgb(255, 255, 255);
+    
+   
   }
   
 
   h1 {
     text-align: center;
-    background-color: #D333FF;
+    background-color: #ffb339;
 
   }
+  h2
+  {
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+h3
+{
+  text-align: center;
+}
 
   p {
     text-align: center;
     font-size: 25px;
+    background-color: rgb(255, 254, 254);
+
   }
 
-  
-  
+
+ 
+  .color {
+    width: 100%;
+    height: 100px;
+    background-color: #FFFFFF;
+  }
+
+  .left {
+    text-align: left;
+  }
+  .center {
+    text-align: center;
+  }
+  .right {
+    text-align: right;
+  }
