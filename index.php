@@ -35,27 +35,123 @@ Que vous pouvez telechargez pour apprendre d'un instrument de musique </p>
 
 <h4> Apprenez le piano en 20 lecons concises </h4>
 <br>
+<h5> Apprenez le violon en 21 lecons concises</h5>
+<br>
+<video src="https://www.youtube.com/watch?v=myPDol5KvDk&list=PL16C22D992491D8A1" controls></video>
 
 <video src="https://www.youtube.com/watch?v=myPDol5KvDk&list=PL16C22D992491D8A1" controls></video>
+
+<button type="submit">Ajouter au panier</button>
+<br>
+<video src="http://localhost:8888/database/index.php" controls></video>
+
+<video src="https://www.youtube.com/watch?v=myPDol5KvDk&list=PL16C22D992491D8A1" controls></video>
+<button type="submit">Ajouter au panier</button>
+<form method="POST" action="formulaire.php" enctype="multipart/form-data">    
+  <label for="nom">Nom :</label><br>
+  <input type="text" id="nom" name="nom"><br>
+  <label for="email">Email :</label><br>
+  <input type="email" id="email" name="email"><br>
+  <label for="message">Message :</label><br>
+  <textarea id="message" name="message"></textarea><br>
+  <input type="submit" value="Envoyer">
+</form>
+
 <br>
 <h4> prix : 7.50€ </h4>
 <br>
 <h4>  Tutorial : One direction on Piano </h4>
 <video src = "https://www.youtube.com/watch?v=IkeMKNQaOXw&list=PL16C22D992491D8A1&index=2" controls></video>
+<button type="submit">Ajouter au panier</button>
+<form method="POST" action="formulaire.php" enctype="multipart/form-data">    
+  <label for="nom">Nom :</label><br>
+  <input type="text" id="nom" name="nom"><br>
+  <label for="email">Email :</label><br>
+  <input type="email" id="email" name="email"><br>
+  <label for="message">Message :</label><br>
+  <textarea id="message" name="message"></textarea><br>
+  <input type="submit" value="Envoyer">
+</form>
+
 <br>
 <h4> prix : 6.50€ </h4>
 <br>
 <h4> Beethoven's Moonlight Sonata no 14 </h4>
 <video src = "https://www.youtube.com/watch?v=T8pfiP7MaIc&list=PL16C22D992491D8A1&index=3" controls></video>
+<button type="submit">Ajouter au panier</button>
+<form method="POST" action="formulaire.php" enctype="multipart/form-data">    
+  <label for="nom">Nom :</label><br>
+  <input type="text" id="nom" name="nom"><br>
+  <label for="email">Email :</label><br>
+  <input type="email" id="email" name="email"><br>
+  <label for="message">Message :</label><br>
+  <textarea id="message" name="message"></textarea><br>
+  <input type="submit" value="Envoyer">
+</form>
+
 <br>
 <h4> prix : 7.00€ </h4>
 <h4> Tutorial : Echoes Yesterday </h4>
 <video src = "https://www.youtube.com/watch?v=myPDol5KvDk&list=PL16C22D992491D8A1&index=1" controls></video>
+<button type="submit">Ajouter au panier</button>""
 <h4> prix : 7.00€ </h4>
 <h4> Tutorial : When the Saints go marching </h4>
 <video src = "https://www.youtube.com/watch?v=zH1LNlslx-I&list=PL16C22D992491D8A1&index=4" controls></video>
-<h4> prix : 7.90€ </h4>
+<button type="submit">Ajouter au panier</button> 
+<form method="POST" action="formulaire.php" enctype="multipart/form-data">    
+  <label for="nom">Nom :</label><br>
+  <input type="text" id="nom" name="nom"><br>
+  <label for="email">Email :</label><br>
+  <input type="email" id="email" name="email"><br>
+  <label for="message">Message :</label><br>
+  <textarea id="message" name="message"></textarea><br>
+  <input type="submit" value="Envoyer">
+</form>
 
+<h4> prix : 7.90€ </h4>
+<h4> Tutorial : How to play in 40 Lessons Guaranteed</h4>
+<video src = "https://www.youtube.com/watch?v=5VU6gxrbR80" controls></video>
+<button type="submit">Ajouter au panier</button> 
+<form method="POST" action="formulaire.php" enctype="multipart/form-data">    
+  <label for="nom">Nom :</label><br>
+  <input type="text" id="nom" name="nom"><br>
+  <label for="email">Email :</label><br>
+  <input type="email" id="email" name="email"><br>
+  <label for="message">Message :</label><br>
+  <textarea id="message" name="message"></textarea><br>
+  <input type="submit" value="Envoyer">
+</form>
+
+<h4> prix : 5.10€ </h4>
+<br>
+<h4> Learn the Piano Lesson 1 & 2 | EASY | Beginner Lessons</h4>
+<video src = "https://www.youtube.com/watch?v=bb0C37ACIuY&list=PL6urkeK7KgD4M9FI4JqF_rU6bZ6srK3Ry" controls></video>
+
+<button type="submit">Ajouter au panier</button>
+<form method="POST" action="formulaire.php" enctype="multipart/form-data">    
+  <label for="nom">Nom :</label><br>
+  <input type="text" id="nom" name="nom"><br>
+  <label for="email">Email :</label><br>
+  <input type="email" id="email" name="email"><br>
+  <label for="message">Message :</label><br>
+  <textarea id="message" name="message"></textarea><br>
+  <input type="submit" value="Envoyer">
+</form>
+
+<?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  $nom = $_POST['nom'];
+  $email = $_POST['email'];
+  $message = $_POST['message'];
+
+  // Traitement des données du formulaire
+  // Envoi d'un email, enregistrement dans une base de données.
+}
+?>
+
+
+
+<h4> prix : 5.10€ </h4>
 
 <div class="color"></div>
 <div class="color"></div>
@@ -71,4 +167,3 @@ Que vous pouvez telechargez pour apprendre d'un instrument de musique </p>
 
 </body>
 </html>
-
