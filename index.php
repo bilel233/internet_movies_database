@@ -16,34 +16,46 @@ Que vous pouvez telechargez pour apprendre d'un instrument de musique </p>
 <p> la passion d'appendre d'un instrument  </p>
 <p> Jouer d'un instrument de musique n'a jamais ete ausi simple, maintenant que les tutoriels en lignes <br> existent </p>
 <p> Profiter desormais de plusieurs essais </p>
-<?php
- 
-  echo "<img src = database/images/piano.jpg  alt apprendre le piano en ligne";
+
+<img src="https://www.istockphoto.com/fr/photo/plan-rapproch%C3%A9-de-violon-gm1288532195-384459237" alt="Image">
+
+
+<br>
+
   
 
-?>
+<br>
 
- <?php
-  echo "<img src =https://www.istockphoto.com/fr/photo/guitare-classique-sur-fond-de-bois-sombre-gm1322201765-408238515  alt apprendre le piano en ligne";
-  
-?>
+
 <br>
-<?php
-  echo "<img https://unsplash.com/fr/photos/C8gib_msapY"
-  
-?>
-<br>
-<?php
-  echo "<img https://www.istockphoto.com/fr/photo/vieux-violon-sur-blanc-gm184329350-17400164"
-  
-?>
-<br>
-<?php
-  echo "<img https://www.istockphoto.com/fr/photo/violoncelle-complet-du-corps-plan-gm155394947-20052339?phrase=violoncelle"
-  
-?>
+
 <br>
 <h3> Choissisez la video qui vous interesse </h3>
+<br>
+
+<h4> Apprenez le piano en 20 lecons concises </h4>
+<br>
+
+<video src="https://www.youtube.com/watch?v=myPDol5KvDk&list=PL16C22D992491D8A1" controls></video>
+<br>
+<h4> prix : 7.50€ </h4>
+<br>
+<h4>  Tutorial : One direction on Piano </h4>
+<video src = "https://www.youtube.com/watch?v=IkeMKNQaOXw&list=PL16C22D992491D8A1&index=2" controls></video>
+<br>
+<h4> prix : 6.50€ </h4>
+<br>
+<h4> Beethoven's Moonlight Sonata no 14 </h4>
+<video src = "https://www.youtube.com/watch?v=T8pfiP7MaIc&list=PL16C22D992491D8A1&index=3" controls></video>
+<br>
+<h4> prix : 7.00€ </h4>
+<h4> Tutorial : Echoes Yesterday </h4>
+<video src = "https://www.youtube.com/watch?v=myPDol5KvDk&list=PL16C22D992491D8A1&index=1" controls></video>
+<h4> prix : 7.00€ </h4>
+<h4> Tutorial : When the Saints go marching </h4>
+<video src = "https://www.youtube.com/watch?v=zH1LNlslx-I&list=PL16C22D992491D8A1&index=4" controls></video>
+<h4> prix : 7.90€ </h4>
+
 
 <div class="color"></div>
 <div class="color"></div>
@@ -51,7 +63,6 @@ Que vous pouvez telechargez pour apprendre d'un instrument de musique </p>
 <div class="color"></div>
 <div class="color"></div>
 <div class="color"></div>
-
 
 
 
@@ -60,3 +71,4 @@ Que vous pouvez telechargez pour apprendre d'un instrument de musique </p>
 
 </body>
 </html>
+
