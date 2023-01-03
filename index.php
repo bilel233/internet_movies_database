@@ -8,6 +8,46 @@
 
 </head>
 <body>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    /* Add a responsive class to the container element */
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="column">
+      <h2>Column 1</h2>
+      <p>Some content in column 1.</p>
+    </div>
+    <div class="column">
+      <h2>Column 2</h2>
+      <p>Some content in column 2.</p>
+    </div>
+  </div>
+</div>
+<form method="POST" action="url.php">
+  <input type="text" name="q" placeholder="Recherche">
+  <input type="submit" value="Rechercher">
+</form>
+
+
+<hr>
 <h1>Delite Music </h1>
 <h2>Des videos de musics disponibles en integralites </h2>
 <p> Des videos de musics disponibles en integralites <br>
@@ -39,13 +79,13 @@ Que vous pouvez telechargez pour apprendre d'un instrument de musique </p>
 <br>
 <video src="https://www.youtube.com/watch?v=myPDol5KvDk&list=PL16C22D992491D8A1" controls></video>
 
-<video src="https://www.youtube.com/watch?v=myPDol5KvDk&list=PL16C22D992491D8A1" controls></video>
+
 
 <button type="submit">Ajouter au panier</button>
 <br>
 <video src="http://localhost:8888/database/index.php" controls></video>
 
-<video src="https://www.youtube.com/watch?v=myPDol5KvDk&list=PL16C22D992491D8A1" controls></video>
+
 <button type="submit">Ajouter au panier</button>
 <form method="POST" action="formulaire.php" enctype="multipart/form-data">    
   <label for="nom">Nom :</label><br>
@@ -161,9 +201,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <div class="color"></div>
 
 
-
-
-
-
 </body>
 </html>
+
+
+<?php 
+// connection à la base de donnes
+//on prepare la requete
+$pdo = new PDO('mysql:host=localhost;dbname=database', 'user', 'password');
+$stmt = $pdo->prepare('SELECT * FROM users WHERE username = :name AND password = :password');
+// on lie les valeurs 
+$stmt->bindValue(':name', $name, PDO::PARAM_STR);
+$stmt->bindValue(':password', $password, PDO::PARAM_STR);
+$stmt->bindValue(':id', $id, PDO::PARAM_STR);
+// on execute les valeurs
+$success = $stmt->execute();
+//on recupere les valeurs
+
+$res= $stmt->fetch();
+?>
