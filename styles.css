@@ -15,7 +15,7 @@ img {
   
   body {
     background-color: rgb(247, 181, 26);
-    background-image: url("images/piano.jpeg");
+    background-image: url("images/ciel.jpg");
     
    
   }
@@ -24,6 +24,7 @@ img {
   h1 {
     text-align: center;
     background-color: #ffb339;
+    background-image: url("images/piano.jpeg");
     background-image: url("images/piano.jpeg");
 
   }
@@ -46,8 +47,7 @@ h5{
   p {
     text-align: center;
     font-size: 25px;
-    background-color: rgb(255, 254, 254);
-
+    
   }
 
 
@@ -71,4 +71,7 @@ h5{
     width: 500px;
     height: 300px;
     border: 1px solid black;
+    display: inline-block;
   }
+
+ 
