@@ -1,10 +1,12 @@
 
 
+
+
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>Ma page web</title>
+    <title>site</title>
     <?php echo '<link rel="stylesheet" href="style.css">'; ?>
     <meta charset="UTF-8">
 
@@ -88,8 +90,16 @@ Que vous pouvez telechargez pour apprendre d'un instrument de musique </p>
 <br>
 <video src="http://localhost:8888/database/index.php" controls></video>
 
-
+<form action="ajouter_au_panier.php" method="post">
+  <input type="hidden" name="product_id" value="piano">
 <button type="submit">Ajouter au panier</button> <!-- Creation d'un bouton ajouter au panier -->
+</form>
+
+<!--Formulaire d'envoi ajout au panier -->
+
+
+
+
 <form method="POST" action="formulaire.php" enctype="multipart/form-data">    
   <label for="nom">Nom :</label><br>
   <input type="text" id="nom" name="nom"><br>                                                  <!-- Formulaire de soumission Post-->
@@ -107,7 +117,11 @@ Que vous pouvez telechargez pour apprendre d'un instrument de musique </p>
 
 
 <video src = "https://www.youtube.com/watch?v=IkeMKNQaOXw&list=PL16C22D992491D8A1&index=2" controls></video>  <!-- ajout de la video -->
-<button type="submit">Ajouter au panier</button>  <!-- Creation d'un bouton ajouter au panier -->
+
+<form action="ajouter_au_panier.php" method="post">
+  <input type="hidden" name="product_id" value="piano">
+<button type="submit">Ajouter au panier</button> <!-- Creation d'un bouton ajouter au panier -->
+</form>  <!-- Creation d'un bouton ajouter au panier -->
 <form method="POST" action="formulaire.php" enctype="multipart/form-data">    
   <label for="nom">Nom :</label><br>
   <input type="text" id="nom" name="nom"><br>
@@ -119,7 +133,13 @@ Que vous pouvez telechargez pour apprendre d'un instrument de musique </p>
 </form>
 
 <video src = "https://www.youtube.com/watch?v=5HQ-qqcRMn8" controls></video>      <!-- ajout de la video -->
-<button type="submit">Ajouter au panier</button>   <!-- Creation d'un bouton ajouter au panier -->
+
+
+
+<form action="ajouter_au_panier.php" method="post">
+  <input type="hidden" name="product_id" value="piano">
+<button type="submit">Ajouter au panier</button> <!-- Creation d'un bouton ajouter au panier -->
+</form>   <!-- Creation d'un bouton ajouter au panier -->
 <form method="POST" action="formulaire.php" enctype="multipart/form-data">    
   <label for="nom">Nom :</label><br>
   <input type="text" id="nom" name="nom"><br>
@@ -135,7 +155,10 @@ Que vous pouvez telechargez pour apprendre d'un instrument de musique </p>
 <br>
 <h4> Beethoven's Moonlight Sonata no 14 </h4>
 <video src = "https://www.youtube.com/watch?v=T8pfiP7MaIc&list=PL16C22D992491D8A1&index=3" controls></video>  <!-- ajout de la video -->
-<button type="submit">Ajouter au panier</button>    <!-- Creation d'un bouton ajouter au panier -->
+<form action="ajouter_au_panier.php" method="post">
+  <input type="hidden" name="product_id" value="piano">
+<button type="submit">Ajouter au panier</button> <!-- Creation d'un bouton ajouter au panier -->
+</form>    <!-- Creation d'un bouton ajouter au panier -->
 <form method="POST" action="formulaire.php" enctype="multipart/form-data">    
   <label for="nom">Nom :</label><br>
   <input type="text" id="nom" name="nom"><br>
@@ -150,11 +173,17 @@ Que vous pouvez telechargez pour apprendre d'un instrument de musique </p>
 <h4> prix : 7.00€ </h4>
 <h4> Tutorial : Echoes Yesterday </h4>
 <video src = "https://www.youtube.com/watch?v=myPDol5KvDk&list=PL16C22D992491D8A1&index=1" controls></video>   <!-- ajout de la video -->
-<button type="submit">Ajouter au panier</button>  <!-- Creation d'un bouton ajouter au panier -->
+<form action="ajouter_au_panier.php" method="post">
+  <input type="hidden" name="product_id" value="piano">
+<button type="submit">Ajouter au panier</button> <!-- Creation d'un bouton ajouter au panier -->
+</form>  <!-- Creation d'un bouton ajouter au panier -->
 <h4> prix : 7.00€ </h4>
 <h4> Tutorial : When the Saints go marching </h4>
 <video src = "https://www.youtube.com/watch?v=zH1LNlslx-I&list=PL16C22D992491D8A1&index=4" controls></video>    <!-- ajout de la video -->
-<button type="submit">Ajouter au panier</button>    <!-- Creation d'un bouton ajouter au panier -->
+<form action="ajouter_au_panier.php" method="post">
+  <input type="hidden" name="product_id" value="piano">
+<button type="submit">Ajouter au panier</button> <!-- Creation d'un bouton ajouter au panier -->
+</form>  <!-- Creation d'un bouton ajouter au panier -->
 <form method="POST" action="formulaire.php" enctype="multipart/form-data">    
   <label for="nom">Nom :</label><br>
   <input type="text" id="nom" name="nom"><br>
@@ -168,7 +197,10 @@ Que vous pouvez telechargez pour apprendre d'un instrument de musique </p>
 <h4> prix : 7.90€ </h4>
 <h4> Tutorial : How to play in 40 Lessons Guaranteed</h4>
 <video src = "https://www.youtube.com/watch?v=5VU6gxrbR80" controls></video>       <!-- ajout de la video -->
-<button type="submit">Ajouter au panier</button>   <!-- Creation d'un bouton ajouter au panier -->
+<form action="ajouter_au_panier.php" method="post">
+  <input type="hidden" name="product_id" value="piano">
+<button type="submit">Ajouter au panier</button> <!-- Creation d'un bouton ajouter au panier -->
+</form>   <!-- Creation d'un bouton ajouter au panier -->
 <form method="POST" action="formulaire.php" enctype="multipart/form-data">    
   <label for="nom">Nom :</label><br>
   <input type="text" id="nom" name="nom"><br>
@@ -184,7 +216,10 @@ Que vous pouvez telechargez pour apprendre d'un instrument de musique </p>
 <h4> Learn the Piano Lesson 1 & 2 | EASY | Beginner Lessons</h4>
 <video src = "https://www.youtube.com/watch?v=bb0C37ACIuY&list=PL6urkeK7KgD4M9FI4JqF_rU6bZ6srK3Ry" controls></video>         <!-- ajout de la video -->
 
+<form action="ajouter_au_panier.php" method="post">
+  <input type="hidden" name="product_id" value="piano">
 <button type="submit">Ajouter au panier</button> <!-- Creation d'un bouton ajouter au panier -->
+</form> <!-- Creation d'un bouton ajouter au panier -->
 <form method="POST" action="formulaire.php" enctype="multipart/form-data">    
   <label for="nom">Nom :</label><br>
   <input type="text" id="nom" name="nom"><br>
@@ -232,7 +267,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <video src = "https://www.youtube.com/watch?v=iPbCdOsrDK4&list=PL6urkeK7KgD6z9rImgxwiqBYZVwq31zlg" controls></video>       <!-- ajout de la video -->
 <h4> prix : 5.90€ </h4>
-<button type="submit">Ajouter au panier</button>
+<form action="ajouter_au_panier.php" method="post">
+  <input type="hidden" name="product_id" value="piano">
+<button type="submit">Ajouter au panier</button> <!-- Creation d'un bouton ajouter au panier -->
+</form>
 <form method="POST" action="formulaire.php" enctype="multipart/form-data">    
   <label for="nom">Nom :</label><br>
   <input type="text" id="nom" name="nom"><br>
@@ -248,7 +286,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <video src = "https://www.youtube.com/watch?v=k2pxLr13ve4&list=PL6urkeK7KgD6z9rImgxwiqBYZVwq31zlg&index=2" controls></video>        <!-- ajout de la video -->
 <h4> prix : 5.90€ </h4>
 
-<button type="submit">Ajouter au panier</button>      <!-- Creation d'un bouton ajouter au panier -->
+<form action="ajouter_au_panier.php" method="post">
+  <input type="hidden" name="product_id" value="piano">
+<button type="submit">Ajouter au panier</button> <!-- Creation d'un bouton ajouter au panier -->
+</form>      <!-- Creation d'un bouton ajouter au panier -->
 <form method="POST" action="formulaire.php" enctype="multipart/form-data">    
   <label for="nom">Nom :</label><br>
   <input type="text" id="nom" name="nom"><br>
@@ -288,4 +329,3 @@ $success = $stmt->execute();
 
 $res= $stmt->fetch(); // fetch recupere les valeurs
 ?>
-
