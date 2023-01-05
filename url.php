@@ -11,4 +11,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
   exit;
 }
+
+
+// Récupérer les données de l'URL de maniere ternaire
+$name = isset($_POST['name']) ? $_POST['name'] : '';
+
+// Afficher les données de l'URL
+echo "Nom : $name<br>";
+
+
 ?>
