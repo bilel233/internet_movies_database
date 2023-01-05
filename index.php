@@ -45,8 +45,9 @@
     </div>
   </div>
 </div>
+
 <form method="POST" action="url.php">
-  <input type="text" name="q" placeholder="Recherche">
+  <input type="text" name="name" placeholder="Recherche">              <!-- url de soumission-->
   <input type="submit" value="Rechercher">
 </form>
 
@@ -96,8 +97,6 @@ Que vous pouvez telechargez pour apprendre d'un instrument de musique </p>
 </form>
 
 <!--Formulaire d'envoi ajout au panier -->
-
-
 
 
 <form method="POST" action="formulaire.php" enctype="multipart/form-data">    
@@ -250,8 +249,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </body>
 <hr>
 <p> apprener le violon en 21 lecons concises </p>
-<h4> Learn the Piano Lesson 1 & 2 | EASY | Beginner Lessons</h4>
+<h4> Learn the violin  Lesson 1 & 2 | EASY | Beginner Lessons</h4>
 <video src = "https://www.youtube.com/watch?v=cI6C4lMYCtM&list=PL6urkeK7KgD49h3tZLnpCHqF2CcjeUjNW" controls></video>      <!-- ajout de la video -->
+
+<form action="ajouter_au_panier.php" method="post">
+  <input type="hidden" name="product_id" value="piano">
+<button type="submit">Ajouter au panier</button> <!-- Creation d'un bouton ajouter au panier -->
+</form>   <!-- Creation d'un bouton ajouter au panier -->
+
 <h4> prix : 7.90€ </h4>
 <form method="POST" action="formulaire.php" enctype="multipart/form-data">    
   <label for="nom">Nom :</label><br>
@@ -329,3 +334,4 @@ $success = $stmt->execute();
 
 $res= $stmt->fetch(); // fetch recupere les valeurs
 ?>
+
