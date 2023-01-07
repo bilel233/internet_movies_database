@@ -7,6 +7,12 @@
     <meta charset="utf-8">
   </head>
   <body>
+
+  <form method="POST" action="formulaireAction.php">
+  <input type="text" name="query" placeholder="Recherche">              <!-- formulaire de soumission-->
+  <input type="submit" value="Rechercher">
+</form>
+
     <h1>Action</h1>
     <p>des videos basees sur le theme de l'action. Avec ceci, vous pourrez en apprendre bien plus. Les videos sont toujours bases sur l'apprentisages d'un instrument de musique, cequi vous permettra de vous ameliorez ou bien de commencez son etude.</p>
     <br>
