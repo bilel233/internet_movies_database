@@ -4,11 +4,20 @@
 <html>
   <head>
     <title>site-action</title>
+    <title>Ma bannière</title>
     <?php echo '<link rel="stylesheet" href="styleAction.css">'; ?>
     <meta charset="UTF-8">
     <meta charset="utf-8">
   </head>
   <body>
+  <div class="banner">
+    <h1>Bienvenue sur mon site de streaming !</h1>
+    <p>Regardez vos films et séries préférés en illimité et sans publicité.</p>
+    <button class="button">Commencer à regarder</button>
+  </div>
+  <br>
+  <br>
+
 
   <form method="POST" action="formulaireAction.php">
   <input type="text" name="query" placeholder="Recherche">              <!-- formulaire de soumission-->
