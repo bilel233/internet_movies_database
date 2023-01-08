@@ -3,6 +3,43 @@ h1{
 }
 
 body{
-    background-image: url(images/ciel.jpg);
+    background-image: url(images/piano.jpeg);
    
 }
+h2
+{
+    text-align: center;
+}
+
+.banner {
+    width: 100%;
+    height: 200px;
+    background-image: url('images/piano.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+  }
+
+  .banner h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .banner p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .banner .button {
+    background-color: blue;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+  }
