@@ -57,11 +57,133 @@
   <video src = "https://www.youtube.com/watch?v=0XDk9FC25yo" controls></video>  <!-- theme de games au throne  -->
   <h3> Game of Thrones Theme </h3>
   <br>
-  <h3> prix : 5.50 €
+  <h3> prix : 5.50 € </h3>
     <br>
     <h3>realisateur : Alison Sparrow </h3>
-    
+    <form action="ajouter_au_panier.php" method="post" enctype="multipart/form-data">
+        <label for="video-title">Titre de la video : </label><br>
+        <input type="text" id="video-title" name="video-title"><br>
+        <label for="video-file">Selectionnez le fichiez video :</label><br>                 <!-- ajout de la video au panier  -->
+        <input type="file" id="video-file" name="video-file"><br><br>
+        <input type="submit" value = "Ajouter la video">
+</form>
+<hr>
+
+<!-- ajout de la video -->
+
+
+<video src = "https://www.youtube.com/watch?v=wE3G7VNMgKg" controls></video> 
+<h3> titre : Alan Walker - Faded for violin and piano (COVER) </h3>
+<a href = "https://www.youtube.com/watch?v=Cm_N-hqbElc&list=PLb5HHk6gBt1KPgPJ9LrhTXKMetOzfY-C4"> Lien vers toutes les videos du realisateur </a>
+<br>
+<h3> prix : 7.00€ </h3>
+    <h3>  realisateur : Alisson Sparrow </h3>
+
+     <!-- ajout de la video au panier  -->
+
+     <form action="ajouter_au_panier.php" method="post" enctype="multipart/form-data">
+        <label for="video-title">Titre de la video : </label><br>
+        <input type="text" id="video-title" name="video-title"><br>
+        <label for="video-file">Selectionnez le fichiez video :</label><br>                
+        <input type="file" id="video-file" name="video-file"><br><br>
+        <input type="submit" value = "Ajouter la video">
+</form>  
+
+<hr>
+
+<!-- ajout de la video -->
+<video src = "https://www.youtube.com/watch?v=Cm_N-hqbElc&list=PLb5HHk6gBt1KPgPJ9LrhTXKMetOzfY-C4" controls></video> 
+<h3> titre : Imagine Dragons - Believer for violin and piano (COVER) </h3>
+<a href = "https://www.youtube.com/watch?v=Cm_N-hqbElc&list=PLb5HHk6gBt1KPgPJ9LrhTXKMetOzfY-C4"> Lien vers toutes les videos du realisateur </a>
+<br>
+<h3> prix : 8.00 € </h3>
+<h3>  realisateur : Alisson Sparrow </h3>
+<hr>
+
+  <!-- ajout de la video au panier  -->
+
+  <form action="ajouter_au_panier.php" method="post" enctype="multipart/form-data">
+        <label for="video-title">Titre de la video : </label><br>
+        <input type="text" id="video-title" name="video-title"><br>
+        <label for="video-file">Selectionnez le fichiez video :</label><br>                
+        <input type="file" id="video-file" name="video-file"><br><br>
+        <input type="submit" value = "Ajouter la video">
+</form>  
+
+
+<!-- ajout de la video -->
+
+<video src = "https://www.youtube.com/watch?v=fjchrT-L9QU&list=PLb5HHk6gBt1KPgPJ9LrhTXKMetOzfY-C4&index=2" controls></video> 
+<h3> titre : Christina Perri - A Thousand Years </h3>
+<a href =   https://www.youtube.com/watch?v=Cm_N-hqbElc&list=PLb5HHk6gBt1KPgPJ9LrhTXKMetOzfY-C4"> Lien vers toutes les videos du realisateur </a>
+<br>
+<h3> prix : 8.20€ </h3>
+<h3>  realisateur : Alisson Sparrow </h3>
+ <!-- ajout de la video au panier  -->
+
+ <form action="ajouter_au_panier.php" method="post" enctype="multipart/form-data">
+        <label for="video-title">Titre de la video : </label><br>
+        <input type="text" id="video-title" name="video-title"><br>
+        <label for="video-file">Selectionnez le fichiez video :</label><br>                
+        <input type="file" id="video-file" name="video-file"><br><br>
+        <input type="submit" value = "Ajouter la video">
+</form>
+<hr>
+
+<!-- ajout de la video -->
+
+<video src = "https://www.youtube.com/watch?v=YnoIoRUciAY&list=PLb5HHk6gBt1KPgPJ9LrhTXKMetOzfY-C4&index=3" controls></video> 
+<h3> titre : Coldplay - The Scientist </h3>
+
+
+<a href =   "https://www.youtube.com/watch?v=YnoIoRUciAY&list=PLb5HHk6gBt1KPgPJ9LrhTXKMetOzfY-C4&index=3"> Lien vers toutes les videos du realisateur </a>
+<br>
+<h3> prix : 4.20€ </h3>
+<h3>  realisateur : Alisson Sparrow </h3>
+ <!-- ajout de la video au panier  -->
+
+ <form action="ajouter_au_panier.php" method="post" enctype="multipart/form-data">
+        <label for="video-title">Titre de la video : </label><br>
+        <input type="text" id="video-title" name="video-title"><br>
+        <label for="video-file">Selectionnez le fichiez video :</label><br>                
+        <input type="file" id="video-file" name="video-file"><br><br>
+        <input type="submit" value = "Ajouter la video">
+</form>
+<hr>
+
+<!-- ajout de la video -->
+
+<video src = "https://www.youtube.com/watch?v=12ibMHRQDGc&list=PLb5HHk6gBt1KPgPJ9LrhTXKMetOzfY-C4&index=4" controls></video> 
+<h3> River Flows in You </h3>
+<a href =   "https://www.youtube.com/watch?v=12ibMHRQDGc&list=PLb5HHk6gBt1KPgPJ9LrhTXKMetOzfY-C4&index=4"> Lien vers toutes les videos du realisateur </a>
+<br>
+<h3> prix : 4.20€ </h3>
+<h3>  realisateur : Alisson Sparrow </h3>
+ <!-- ajout de la video au panier  -->
+ <form action="ajouter_au_panier.php" method="post" enctype="multipart/form-data">
+        <label for="video-title">Titre de la video : </label><br>
+        <input type="text" id="video-title" name="video-title"><br>
+        <label for="video-file">Selectionnez le fichiez video :</label><br>                
+        <input type="file" id="video-file" name="video-file"><br><br>
+        <input type="submit" value = "Ajouter la video">
+</form>
+<hr>
+<!-- ajout de la video -->
+<video src = "https://www.youtube.com/watch?v=y4-7fqaDj4c&list=PLb5HHk6gBt1KPgPJ9LrhTXKMetOzfY-C4&index=5" controls></video> 
+<h3> Hallelujah  in You </h3>
+ controls></video> 
+ <br>
+ <h3> prix : 3.90€ </h3>
+<h3>  realisateur : Alisson Sparrow </h3>
+ <!-- ajout de la video au panier  -->
+<!-- ajout de la video au panier  -->
+<form action="ajouter_au_panier.php" method="post" enctype="multipart/form-data">
+        <label for="video-title">Titre de la video : </label><br>
+        <input type="text" id="video-title" name="video-title"><br>
+        <label for="video-file">Selectionnez le fichiez video :</label><br>                
+        <input type="file" id="video-file" name="video-file"><br><br>
+        <input type="submit" value = "Ajouter la video">
+</form>
 
   </body>
 </html>
-
