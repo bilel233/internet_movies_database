@@ -40,7 +40,7 @@
 
       <br>
       realisateur : Alison Sparrow : theme : Action </h3>
-     lien :  <a href="https://www.youtube.com/watch?v=pKdMhkciwrs&list=PL6urkeK7KgD41JDZRHaQzdKlHrJ5-fvdr&index=1">Cliquez ici pour accéder à la page d'exemple</a>  <!-- creation du lien -->
+     lien :  <a href="https://www.youtube.com/watch?v=pKdMhkciwrs&list=PL6urkeK7KgD41JDZRHaQzdKlHrJ5-fvdr&index=1">Cliquez ici pour accéder à la page </a>  <!-- creation du lien -->
       <br>
 
 
@@ -48,10 +48,20 @@
       <form action="ajouter_au_panier.php" method="post" enctype="multipart/form-data">
         <label for="video-title">Titre de la video : </label><br>
         <input type="text" id="video-title" name="video-title"><br>
-        <label for="video-file">Selectionnez le fichiez video :</label><br>
+        <label for="video-file">Selectionnez le fichiez video :</label><br>                 <!-- ajout de la video au panier  -->
         <input type="file" id="video-file" name="video-file"><br><br>
         <input type="submit" value = "Ajouter la video">
 </form>
 <hr>
+  <!-- ajout de la video -->
+  <video src = "https://www.youtube.com/watch?v=0XDk9FC25yo" controls></video>  <!-- theme de games au throne  -->
+  <h3> Game of Thrones Theme </h3>
+  <br>
+  <h3> prix : 5.50 €
+    <br>
+    <h3>realisateur : Alison Sparrow </h3>
+    
+
   </body>
 </html>
+
