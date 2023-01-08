@@ -10,10 +10,17 @@
     <meta charset="utf-8">
   </head>
   <body>
-  <div class="banner">
+  
+ 
     <h1>Bienvenue sur mon site de streaming !</h1>
     <p>Regardez vos films et séries préférés en illimité et sans publicité.</p>
-    <button class="button">Commencer à regarder</button>
+    <?php
+  // Générez le code HTML du bouton
+  echo '<form method="post" action="banniere.php">';
+  echo '<input type="submit" value="Commencer à regarder" />';
+  echo '</form>';
+?>
+
   </div>
   <br>
   <br>
