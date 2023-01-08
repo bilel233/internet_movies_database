@@ -43,3 +43,8 @@ h2
     font-size: 16px;
     border-radius: 4px;
   }
+
+  .banner input[type="text"], .banner input[type="email"] {
+    width: 60
+
+  }
