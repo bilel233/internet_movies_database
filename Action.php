@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -34,15 +36,22 @@
     <h3> titre : Crazy In Love - Fifty Shades of Grey | Easy PIANO TUTORIAL
     <video src = "https://www.youtube.com/watch?v=pKdMhkciwrs&list=PL6urkeK7KgD41JDZRHaQzdKlHrJ5-fvdr&index=1" controls></video>       <!-- ajout de la video -->
     <h3> prix : 4.50 €
+
+
       <br>
       realisateur : Alison Sparrow : theme : Action </h3>
      lien :  <a href="https://www.youtube.com/watch?v=pKdMhkciwrs&list=PL6urkeK7KgD41JDZRHaQzdKlHrJ5-fvdr&index=1">Cliquez ici pour accéder à la page d'exemple</a>  <!-- creation du lien -->
       <br>
 
-      <form action="ajouter_au_panier.php" method="post">
-  <input type="hidden" name="product_id" value="piano">
-<button type="submit">Ajouter au panier</button> <!-- Creation d'un bouton ajouter au panier -->
-</form>  <!-- Creation d'un bouton ajouter au panier -->
+
+
+      <form action="ajouter_au_panier.php" method="post" enctype="multipart/form-data">
+        <label for="video-title">Titre de la video : </label><br>
+        <input type="text" id="video-title" name="video-title"><br>
+        <label for="video-file">Selectionnez le fichiez video :</label><br>
+        <input type="file" id="video-file" name="video-file"><br><br>
+        <input type="submit" value = "Ajouter la video">
+</form>
 <hr>
   </body>
 </html>
