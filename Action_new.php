@@ -96,11 +96,23 @@
 <body>
   <!-- Ajoutez votre en-tête -->
   <header>
-    <h1>Mon site de streaming</h1>
+    <h1>Mon site de streaming d'Action</h1>
+    <form action="search.php" method="GET">
+  <input type="text" name="query">
+  <input type="submit" value="Rechercher">
+</form>
+<br>
+
+
+
+
     <nav>
-      <a href="#">Accueil</a>
-      <a href="#">Catégories</a>
-      <a href="#">Mon compte</a>
+    <a href="http://localhost:8888/phpProject/monCompte.php" target="_blank" title="Cliquez pour ouvrir dans un nouvel onglet">Mon compte</a>
+    <a href="http://www.example.com" target="_blank" title="Cliquez pour ouvrir dans un nouvel onglet">Categories</a>
+    <a href="http://localhost:8888/phpProject/Action.php" target="_blank" title="Cliquez pour ouvrir dans un nouvel onglet">Accueil</a>
+    <a href="http://localhost:8888/phpProject/Panier.php" target="_blank" title="Cliquez pour ouvrir dans un nouvel onglet">Panier</a>
+
+
     </nav>
   </header>
 
@@ -108,11 +120,8 @@
 votre site -->
 
   <div class="container">
-    <div class="video-card">
-      <div class="thumbnail" style="background-image: url(image1.jpg);"></div>
-      <h2>Titre de la vidéo</h2>
-      <p>Description de la vidéo</p>
-    </div>
+  <iframe width="560" height="315" src=" https://www.youtube.com/embed/watch?v=kVKwsqTaVyQ/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- the amazing spiderman-->
     <div class="video-card">
       <div class="thumbnail" style="background-image: url(image2.jpg);"></div>
       <h2>Titre de la vidéo</h2>
