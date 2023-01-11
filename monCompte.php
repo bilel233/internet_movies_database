@@ -1,31 +1,27 @@
 
+
+
 <?php
-// Récupération des données du formulaire
-$username = $_POST['username'];
-$email = $_POST['email'];
-$password = $_POST['password'];
 
-// Nettoyage des données d'entrée
-$username = htmlspecialchars($username);
-$email = htmlspecialchars($email);
-$password = htmlspecialchars($password);
-// Affichage des données
-echo "Nom d'utilisateur : $username<br>";
-echo "Adresse e-mail : $email<br>";
-echo "Mot de passe : $password<br>";
+$username = htmlspecialchars($_POST['username'], ENT_QUOTES, 'UTF-8');
+$email = htmlspecialchars($_POST['email'], ENT_QUOTES, 'UTF-8');
+$password = htmlspecialchars($_POST['password'], ENT_QUOTES, 'UTF-8');
 ?>
+<form method="post" action="monCompte.php">
+    <label for="username">Nom d'utilisateur :</label>
+    <input type="text" name="username" id="username" required>
+    <br>
+    <label for="email">Adresse e-mail :</label>
+    <input type="email" name="email" id="email" required>
+    <br>
+    <label for="password">Mot de passe :</label>
+    <input type="password" name="password" id="password" required>
+    <br>
+    <label for="password_confirm">Confirmez le mot de passe :</label>
+    <input type="password" name="password_confirm" id="password_confirm" required>
+    <br>
+    <input type="submit" value="S'inscrire">
+</form>
 
-<br>
-
-
-<form action="monCompte.php" method="post">
-  <label for="username">Nom d'utilisateur :</label><br>
-  <input type="text" id="username" name="username" required><br>
-  <label for="email">Adresse e-mail :</label><br>
-  <input type="email" id="email" name="email" required><br>
-  <label for="password">Mot de passe :</label><br>
-  <input type="password" id="password" name="password" required><br><br>
-  <button type="submit">S'inscrire</button>
-</form> 
 
 
