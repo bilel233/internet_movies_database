@@ -98,9 +98,11 @@
   <header>
     <h1>Mon site de streaming d'Action</h1>
     <form action="search.php" method="GET">
-  <input type="text" name="query">
+  <input type="text" name="keyword" placeholder="Rechercher une vidéo">
   <input type="submit" value="Rechercher">
 </form>
+
+
 <br>
 
 
