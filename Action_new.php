@@ -120,8 +120,8 @@
 votre site -->
 
   <div class="container">
-  <iframe width="560" height="315" src=" https://www.youtube.com/embed/watch?v=kVKwsqTaVyQ/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<!-- the amazing spiderman-->
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/kVKwsqTaVyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
     <div class="video-card">
       <div class="thumbnail" style="background-image: url(image2.jpg);"></div>
       <h2>Titre de la vidéo</h2>
