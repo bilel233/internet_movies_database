@@ -123,61 +123,41 @@ votre site -->
   <iframe width="560" height="315" src="https://www.youtube.com/embed/kVKwsqTaVyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
     <div class="video-card">
-      <div class="thumbnail" style="background-image: url(image2.jpg);"></div>
-      <h2>Titre de la vidéo</h2>
-      <p>Description de la vidéo</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/G1Na0rKWY74" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="video-card">
-      <div class="thumbnail" style="background-image: url(image3.jpg);"></div>
-      <h2>Titre de la vidéo</h2>
-      <p>Description de la vidéo</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VjaLDf-ouJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="video-card">
-      <div class="thumbnail" style="background-image: url(image3.jpg);"></div>
-      <h2>Titre de la vidéo</h2>
-      <p>Description de la vidéo</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NCZTYdAP6w0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="video-card">
-      <div class="thumbnail" style="background-image: url(image3.jpg);"></div>
-      <h2>Titre de la vidéo</h2>
-      <p>Description de la vidéo</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/SqH3-sCkZQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 
     <div class="video-card">
-      <div class="thumbnail" style="background-image: url(image3.jpg);"></div>
-      <h2>Titre de la vidéo</h2>
-      <p>Description de la vidéo</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2TAOizOnNPo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 
     <div class="video-card">
-      <div class="thumbnail" style="background-image: url(image3.jpg);"></div>
-      <h2>Titre de la vidéo</h2>
-      <p>Description de la vidéo</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/KUX6KI3-AjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 
     <div class="video-card">
-      <div class="thumbnail" style="background-image: url(image3.jpg);"></div>
-      <h2>Titre de la vidéo</h2>
-      <p>Description de la vidéo</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/KPiJgEc7Ux8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 
     <div class="video-card">
-      <div class="thumbnail" style="background-image: url(image3.jpg);"></div>
-      <h2>Titre de la vidéo</h2>
-      <p>Description de la vidéo</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/99XOxDLMvBg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 
     <div class="video-card">
-      <div class="thumbnail" style="background-image: url(image3.jpg);"></div>
-      <h2>Titre de la vidéo</h2>
-      <p>Description de la vidéo</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/CYV-mTqlI_g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     
   </div>
   <!-- Ajoutez un lecteur vidéo -->
-  <div class="video-player">
-    <video src="video.mp4" controls></video>
-  </div>
+  
   <!-- Ajoutez un pied de page -->
   <footer>
     <p>Copyright 2021 - Mon site de streaming</p>
