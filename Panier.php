@@ -1,49 +1,51 @@
+
 <?php
-// Connexion à la base de données
-
-try{
-    $pdo = new PDO("mysql:host=localhost;dbname=test;charset=utf8", 'root', 'root');
+function get_title($video_id) {
+  global $pdo;
+  $query = $pdo->prepare("SELECT title FROM videos WHERE id = ?");
+  $query->execute([$video_id]);
+  $result = $query->fetch();
+  return $result['title'];
 }
-catch (Exception $e)
-{
-    die("Erreur;" . $e->getMessage());
-}
-// Récupération de l'ID du produit à ajouter au panier
-$product_id = $_GET['id'];
-
-// Vérification de l'existence de la session
-if (isset($_SESSION['cart'][$product_id])) {
-  // Le produit est déjà dans le panier, augmenter la quantité
-  $_SESSION['cart'][$product_id]++;
-} else {
-  // Le produit n'est pas encore dans le panier, ajouter le produit avec une quantité de 1
-  $_SESSION['cart'][$product_id] = 1;
+function get_length($video_id) {
+  global $pdo;
+  $query = $pdo->prepare("SELECT length FROM videos WHERE id = ?");
+  $query->execute([$video_id]);
+  $result = $query->fetch();
+  return $result['length'];
 }
 
-// Redirection vers la page du panier
-header('Location: Panier.php');
-exit;
+
+ // On cree  un tableau de session en utilisant une session php
+session_start();
+$bdd = new PDO("mysql:host=localhost;dbname=videos;charset=utf8", "root");
+if (!isset($_SESSION['cart'])) {
+    $_SESSION['cart'] = array();
+}
+$video_id = $_POST['video_id'];
+$quantity = $_POST['quantity'];
+
+$_SESSION['cart'][$video_id] = $quantity;
 
 
-// Récupération des produits du panier à partir de la session
-//$products = $_SESSION['cart'];
-
-// Vérification de l'existence de produits dans le panier
-if (!empty($products)) {
-  // Affichage de chaque produit dans le panier
-  foreach ($products as $product_id => $quantity) {
-    // Récupération des informations du produit à partir de la base de données
-    $stmt = $pdo->prepare("SELECT * FROM products WHERE id = ?");
-    $stmt->execute([$product_id]);
-    $product = $stmt->fetch();
-
-    // Affichage du nom et de la quantité du produit
-    echo $product['name'] . ' x ' . $quantity . '<br>';
+/* je verifie les elements de mon panier si il yen a pui je les affiche */
+if (!empty($cart)) {
+  echo '<table>';
+  echo '<tr>';
+  echo '<th>Title</th>';
+  echo '<th>Length</th>';
+  echo '<th>Quantity</th>';
+  echo '</tr>';
+  foreach ($cart as $video_id => $item) {
+      echo '<tr>';
+      echo '<td>'.get_title($video_id).'</td>';
+      echo '<td>'.get_length($video_id).'</td>';
+      echo '<td>'.$item['qty'].'</td>';
+      echo '</tr>';
   }
+  echo '</table>';
 } else {
-  // Aucun produit dans le panier
-  echo 'Le panier est vide';
+  echo 'Your cart is empty.';
 }
-
 
 ?>
