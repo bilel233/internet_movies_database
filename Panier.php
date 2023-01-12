@@ -16,36 +16,55 @@ function get_length($video_id) {
 }
 
 
- // On cree  un tableau de session en utilisant une session php
-session_start();
-$bdd = new PDO("mysql:host=localhost;dbname=videos;charset=utf8", "root");
+ <?php
+$pdo = new PDO("mysql:host=localhost;dbname=videos;charset=utf8", 'root','');
+// Initialisation du panier s'il n'existe pas déjà
 if (!isset($_SESSION['cart'])) {
-    $_SESSION['cart'] = array();
+  $_SESSION['cart'] = array();
 }
-$video_id = $_POST['video_id'];
-$quantity = $_POST['quantity'];
 
-$_SESSION['cart'][$video_id] = $quantity;
-
-
-/* je verifie les elements de mon panier si il yen a pui je les affiche */
-if (!empty($cart)) {
-  echo '<table>';
-  echo '<tr>';
-  echo '<th>Title</th>';
-  echo '<th>Length</th>';
-  echo '<th>Quantity</th>';
-  echo '</tr>';
-  foreach ($cart as $video_id => $item) {
-      echo '<tr>';
-      echo '<td>'.get_title($video_id).'</td>';
-      echo '<td>'.get_length($video_id).'</td>';
-      echo '<td>'.$item['qty'].'</td>';
-      echo '</tr>';
+// Ajout d'un produit au panier
+if (isset($_POST['add_to_cart'])) {
+  $product_id = $_POST['product_id'];
+  $quantity = $_POST['quantity'];
+  if (!isset($_SESSION['cart'][$product_id])) {
+      $_SESSION['cart'][$product_id] = $quantity;
+  } else {
+      $_SESSION['cart'][$product_id] += $quantity;
   }
-  echo '</table>';
-} else {
-  echo 'Your cart is empty.';
 }
 
+
+foreach ($_SESSION['cart'] as $product_id => $quantity) {
+  // Récupération des informations sur le produit à partir de la base de données
+  $query = "SELECT * FROM panier WHERE id = $product_id";
+  $result = $pdo->query($query);
+  $product = $result->fetch();
+  echo '<tr>';
+  echo '<td>' . $product['name'] . '</td>';
+  echo '<td>' . $quantity . '</td>';
+  echo '</tr>';
+}
+echo '</table>';
+
+// Affichage du contenu du panier
+echo '<h2>Contenu de votre panier</h2>';
+echo '<table>';
+echo '<tr><th>Nom de l\'article</th><th>Quantité</th></tr>';
+if(empty($_SESSION['cart'])){
+    echo '<tr><td colspan="2">Votre panier est vide</td></tr>';
+}
+else{
+    foreach ($_SESSION['cart'] as $product_id => $quantity) {
+        // Récupération des informations sur le produit à partir de la base de données
+        $query = "SELECT * FROM panier WHERE id = $product_id";
+        $result = $pdo->query($query);
+        $product = $result->fetch();
+        echo '<tr>';
+        echo '<td>' . $product['name'] . '</td>';
+        echo '<td>' . $quantity . '</td>';
+        echo '</tr>';
+    }
+}
+echo '</table>';
 ?>
