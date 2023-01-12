@@ -1,4 +1,55 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mon panier</title>
+    <link rel="stylesheet" type="text/css" href="Panier.css">
+</head>
+<body>
+    <header>
+        <h1>Mon panier</h1>
+    </header>
+    <main>
+        <table>
+            <tr>
+                <th>Nom de l'article</th>
+                <th>Prix</th>
+                <th>Quantité</th>
+                <th>Total</th>
+            </tr>
+            <?php
+                if(empty($_SESSION['cart'])){
+                    echo '<tr><td colspan="4">Votre panier est vide</td></tr>';
+                }
+                else{
+                    $total = 0;
+                    foreach ($_SESSION['cart'] as $product_id => $product) {
+                        echo '<tr>';
+                        echo '<td>' . $product['name'] . '</td>';
+                        echo '<td>' . $product['price'] . '€</td>';
+                        echo '<td>' . $product['quantity'] . '</td>';
+                        $subtotal = $product['price'] * $product['quantity'];
+                        echo '<td>' . $subtotal . '€</td>';
+                        echo '</tr>';
+                        $total += $subtotal;
+                    }
+                    echo '<tr>';
+                    echo '<td colspan="3">Total</td>';
+                    echo '<td>' . $total . '€</td>';
+                    echo '</tr>';
+                }
+            ?>
+        </table>
+    </main>
+</body>
+</html>
+
+
+
+
+
+
+
 <?php
 function get_title($video_id) {
   global $pdo;
@@ -16,7 +67,7 @@ function get_length($video_id) {
 }
 
 
- <?php
+ 
 $pdo = new PDO("mysql:host=localhost;dbname=videos;charset=utf8", 'root','');
 // Initialisation du panier s'il n'existe pas déjà
 if (!isset($_SESSION['cart'])) {
