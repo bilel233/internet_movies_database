@@ -35,34 +35,61 @@ votre site -->
   <div class="container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/XFPOBERTZwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <div class="video-card">
+    <form action="Panier.php" method="POST">
+    <input type="hidden" name="item_id" value="123">
+    <input type="submit" value="Ajouter au panier">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/hlgwRr_7gr0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <div class="video-card">
+    <form action="Panier.php" method="POST">
+    <input type="hidden" name="item_id" value="123">
+    <input type="submit" value="Ajouter au panier">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/CUCygdUCb34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="video-card">
+    <form action="Panier.php" method="POST">
+    <input type="hidden" name="item_id" value="123">
+    <input type="submit" value="Ajouter au panier">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/JxOsr8gidwc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="video-card">
+    <form action="Panier.php" method="POST">
+    <input type="hidden" name="item_id" value="123">
+    <input type="submit" value="Ajouter au panier">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ua3qXksEIdU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 
     <div class="video-card">
+    <form action="Panier.php" method="POST">
+    <input type="hidden" name="item_id" value="123">
+    <input type="submit" value="Ajouter au panier">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/_LUWnjT3iks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 
     <div class="video-card">
+    <form action="Panier.php" method="POST">
+    <input type="hidden" name="item_id" value="123">
+    <input type="submit" value="Ajouter au panier">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/h1Jv5WdOrz8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 
     <div class="video-card">
+    <form action="Panier.php" method="POST">
+    <input type="hidden" name="item_id" value="123">
+    <input type="submit" value="Ajouter au panier">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/i8529cjgCOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 
     <div class="video-card">
+    <form action="Panier.php" method="POST">
+    <input type="hidden" name="item_id" value="123">
+    <input type="submit" value="Ajouter au panier">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/0LXyf7Capjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 
     <div class="video-card">
+    <form action="Panier.php" method="POST">
+    <input type="hidden" name="item_id" value="123">
+    <input type="submit" value="Ajouter au panier">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/H0J23Tk_lfY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     
