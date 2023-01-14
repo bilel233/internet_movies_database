@@ -1,4 +1,4 @@
- /* Styles CSS pour le site */
+  /* Styles CSS pour le site */
     body {
       margin: 0;
       font-family: sans-serif;
@@ -107,4 +107,33 @@
       cursor: pointer;
       font-size: 20px;
     }
+
+
+    /* styles de base pour toutes les tailles d'écran */
+body {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* styles pour les écrans de petite taille */
+@media (max-width: 600px) {
+  body {
+      font-size: 14px;
+  }
+}
+
+/* styles pour les écrans de taille moyenne */
+@media (min-width: 601px) and (max-width: 900px) {
+  body {
+      font-size: 18px;
+  }
+}
+
+/* styles pour les écrans de grande taille */
+@media (min-width: 901px) {
+  body {
+      font-size: 20px;
+  }
+}
+
     
